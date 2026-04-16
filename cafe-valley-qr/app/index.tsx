@@ -6,8 +6,8 @@ export default function HomeScreen() {
   return (
     <View style={styles.screen}>
       <QRCard
-        name="Samir Omer Mohammed Ibrahim"
-        role="Full Stack Developer / Laravel / React"
+        name="Amro Mohamed Easa"
+        role="Software Developer /Data Analyst/Accountant/Trainer"
         url="https://cafe-valley.com/"
       />
     </View>
