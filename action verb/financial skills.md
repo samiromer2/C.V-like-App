@@ -1,0 +1,16 @@
+administered
+allocated
+analyzed
+appraised
+audited
+balanced
+budgeted
+calculated
+computed
+developed
+forecast
+managed
+marketed
+planned
+projected
+researched

@@ -1,0 +1,12 @@
+assessed
+assisted
+clarified
+coached
+counselled
+demonstrated
+facilitated
+familiarized
+guided
+referred
+rehabilitated
+represented

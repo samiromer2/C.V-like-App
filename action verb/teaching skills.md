@@ -1,0 +1,17 @@
+assembled
+built
+calculated
+computed
+designed
+devised
+engineered
+fabricated
+maintained
+operated
+overhauled
+programmed
+remodelled
+repaired
+solved
+trained
+upgraded

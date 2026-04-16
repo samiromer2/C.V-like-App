@@ -1,0 +1,17 @@
+clarified
+collected
+critiqyed
+diagnosed
+evaluated
+examined
+extracted
+identified
+inspected
+interpredted
+interviewed
+investigated
+organized
+reviewed
+summarized
+surveyed
+systematized
