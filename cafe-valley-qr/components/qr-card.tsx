@@ -18,17 +18,17 @@ type SocialLink = {
 
 const SOCIAL_LINKS: SocialLink[] = [
   {
-    url: 'https://github.com/samiromer2/',
+    url: 'https://github.com/amrobollad',
     icon: 'logo-github',
     label: 'GitHub',
   },
   {
-    url: 'https://www.linkedin.com/in/samiroibrahim/',
+    url: 'https://sd.linkedin.com/in/amro-easa-45b79b223',
     icon: 'logo-linkedin',
     label: 'LinkedIn',
   },
   {
-    url: 'https://x.com/samiromer',
+    url: 'https://x.com/AmroEasa',
     icon: 'logo-twitter',
     label: 'X',
   },
