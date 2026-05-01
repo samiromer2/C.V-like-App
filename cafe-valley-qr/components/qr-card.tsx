@@ -10,30 +10,6 @@ import {
 } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 
-type SocialLink = {
-  url: string;
-  icon: keyof typeof Ionicons.glyphMap;
-  label: string;
-};
-
-const SOCIAL_LINKS: SocialLink[] = [
-  {
-    url: 'https://github.com/amrobollad',
-    icon: 'logo-github',
-    label: 'GitHub',
-  },
-  {
-    url: 'https://sd.linkedin.com/in/amro-easa-45b79b223',
-    icon: 'logo-linkedin',
-    label: 'LinkedIn',
-  },
-  {
-    url: 'https://x.com/AmroEasa',
-    icon: 'logo-twitter',
-    label: 'X',
-  },
-];
-
 type QRCardProps = {
   name: string;
   role: string;
@@ -71,25 +47,6 @@ export function QRCard({ name, role, url }: QRCardProps) {
           <Text style={styles.primaryLinkText}>{displayHost}</Text>
           <Ionicons name="open-outline" size={18} color="#8b6914" />
         </Pressable>
-
-        <View style={styles.divider} />
-
-        <Text style={styles.linksHeading}>Connect</Text>
-        <View style={styles.socialRow}>
-          {SOCIAL_LINKS.map((item) => (
-            <Pressable
-              key={item.url}
-              accessibilityRole="link"
-              accessibilityLabel={`Open ${item.label}`}
-              onPress={() => openUrl(item.url)}
-              style={({ pressed }) => [
-                styles.socialButton,
-                pressed && styles.socialButtonPressed,
-              ]}>
-              <Ionicons name={item.icon} size={26} color="#3d2914" />
-            </Pressable>
-          ))}
-        </View>
       </View>
     </View>
   );
@@ -174,40 +131,5 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#5c4033',
     flexShrink: 1,
-  },
-  divider: {
-    marginTop: 22,
-    height: 1,
-    width: '100%',
-    backgroundColor: 'rgba(92, 64, 51, 0.12)',
-  },
-  linksHeading: {
-    marginTop: 16,
-    fontSize: 12,
-    fontWeight: '700',
-    letterSpacing: 1.2,
-    color: '#8a7f72',
-    textTransform: 'uppercase',
-  },
-  socialRow: {
-    marginTop: 14,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 14,
-  },
-  socialButton: {
-    width: 52,
-    height: 52,
-    borderRadius: 26,
-    backgroundColor: '#fff',
-    borderWidth: 1,
-    borderColor: 'rgba(92, 64, 51, 0.15)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  socialButtonPressed: {
-    backgroundColor: '#f0e6dc',
-    borderColor: 'rgba(107, 68, 35, 0.35)',
   },
 });
